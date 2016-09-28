@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <title>Accessibility Forms</title>
@@ -18,26 +18,25 @@
 
       <form action="" method="post" name="form1" id="form1">
       <p>1. Personal Details</p>
-      <p>Name:
-      <input type="text" id="textfield"></p>
+
 
       <p>Phone Number:
-      <input type="text" id="textfield3"></p>
+      <label for="phonenumber">Phone number:</label>
+      <input type="text" name="phonenumber" id="phonenumber"></p>
 
       <p>Date of Birth:
-      <input type="text" tabindex="-1" id="textfield2"></p>
+      <label for="birthdate">Date of Birth:</label>
+      <input type="text" name="birthdate" id="birthdate"></p>
 
-      <p><label for="textfield4">First Name:
-      <input type="text" id="textfield4"></p>
 
-      <p>Last Name:
-      <input type="text" tabindex="4" id="textfield5"></p>
 
-      <p><label for="address">Address:</label>
-      <input type="text"></p>
+      <p>Address:
+      <label for="address">Address:</label>
+      <input type="text" name="address" id="address"></p>
 
       <p>State:
-       <select id="state">
+       <label for="state">State:</label>
+       <select name="state" id="state">
         <option value="0">Select</option>
         <option value="Arizona">Arizona</option>
         <option value="California">California</option>
@@ -52,22 +51,34 @@
 
       <fieldset>
       <legend>2. Emergency Contact</legend>
-      <p>Name:
-      <input type="text" id="textfield13"></p>
+      <p>Contact Name:
+      <label for="name">Contact Name:</label>
+      <input type="text" name="name" id="name"></p>
 
-      <p>Address:
-      <input type="text" id="textfield14"></p>
+      <p>Contact Address:
+      <label for="contactaddress">Contact Address:</label>
+      <input type="text" name="contactaddress" id="contactaddress"></p>
 
-      <p>State
-      <input type="text" id="textfield15"></p>
+      <p>Contact State:
+      <label for="contactstate">Contact State:</label>
+      <input type="text" name="contactstate" id="contactstate"></p>
 
-      <p>Telephone:
-      <input type="text" id="textfield16"></p>
+      <p>Contact Telephone:
+      <label for="contacttelephone">Contact Telephone:</label>
+      <input type="text" name="contacttelephone" id="contacttelephone"></p>
       </fieldset>
 
+      <fieldset>
+      <legend>Donut Type</legend>
       <p>3. Citizenship</p>
-      <p><input type="radio">United States</p>
-      <p><input type="radio">Canada</p>
+
+      <p>United States:
+      <label for="CitizenshipUnitedStates">United States:</label>
+      <input type="radio" id="CitizenshipUnitedStates" name="CitizenshipUnitedStates"></p>
+
+      <p>Canada:
+      <label for="CitizenshipCanada">Canada:</label>
+      <input type="radio" id="CitizenshipCanada" name="CitizenshipCanada"></p>
 
       <p><input type="submit" value="Submit" id="button" name="button"></p>
       </form>
